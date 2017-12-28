@@ -9,7 +9,7 @@
  * <!> The routeData for each path level ends up in a nested set of routeData objetcs.
  *     The nested routes are cached in routeState.
  */
-export interface RouteData {
+declare interface RouteData {
 
     // Title of the document
     title: string
@@ -41,7 +41,7 @@ export interface RouteData {
 
 declare module 'universal-router-outlet' {
     export function updateRouterOutlet(routerOutlet: HTMLElement, routeData: RouteData, defaultCmp?: string): void
-    export function getRouteTitle(routeData: RouteData): void
-    export function setRouteData(routeData: RouteData): void
-    export function getRouteData(outletId: string): RouteData 
+    export function getRouteTitle(routeData: RouteData): string
+    export function setRouteData(routeData: RouteData[]): void
+    export function getRouteData(outletId: string): RouteData[]
 }

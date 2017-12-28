@@ -1,6 +1,6 @@
 {
   "name": "universal-router-outlet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use universal router in a web components app. Router outlet will take care of updating the right components when the url route changes",
   "main": "lib/universal-router-outlet.js",
   "types": "./src/universal-router-outlet.d.ts",
